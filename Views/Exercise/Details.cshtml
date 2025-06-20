@@ -1,54 +1,94 @@
 ﻿@model FitnessTrackerCMS.DTOs.ExerciseDto
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Exercise Details";
 }
 
-<h1>Exercise Details</h1>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Exercise Details</h1>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.ExerciseId" class="btn btn-warning">
+                <i class="fas fa-edit"></i> Edit
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
 
-<div>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MuscleGroup)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MuscleGroup)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Difficulty)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Difficulty)
-        </dd>
-    </dl>
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">@Model.Name</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Muscle Group</dt>
+                <dd class="col-sm-9">@Model.MuscleGroup</dd>
 
-    <h4>Equipment</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var equipment in Model.Equipment)
+                <dt class="col-sm-3">Difficulty</dt>
+                <dd class="col-sm-9">
+                    <span class="badge @GetDifficultyBadgeClass(Model.Difficulty)">
+                        @Model.Difficulty
+                    </span>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+            <h5 class="mb-0">Required Equipment</h5>
+        </div>
+        <div class="card-body">
+            @if (Model.Equipment.Any())
             {
-                <tr>
-                    <td>@equipment.Name</td>
-                    <td>@equipment.Description</td>
-                </tr>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var equipment in Model.Equipment)
+                            {
+                                <tr>
+                                    <td>@equipment.Name</td>
+                                    <td>@equipment.Description</td>
+                                    <td>
+                                        <a asp-controller="Equipment" asp-action="Details" asp-route-id="@equipment.EquipmentId"
+                                           class="btn btn-sm btn-outline-info">
+                                            <i class="fas fa-eye"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             }
-        </tbody>
-    </table>
+            else
+            {
+                <div class="alert alert-info">
+                    No equipment required for this exercise.
+                </div>
+            }
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.ExerciseId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+@functions {
+    public string GetDifficultyBadgeClass(string difficulty)
+    {
+        return difficulty switch
+        {
+            "Beginner" => "bg-success",
+            "Intermediate" => "bg-warning text-dark",
+            "Advanced" => "bg-danger",
+            _ => "bg-secondary"
+        };
+    }
+}

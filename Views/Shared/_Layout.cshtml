@@ -6,44 +6,58 @@
     <title>@ViewData["Title"] - FitnessTrackerCMS</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/FitnessTrackerCMS.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FitnessTrackerCMS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipment" asp-action="Index">Equipment</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Exercise" asp-action="Index">Exercises</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Workout" asp-action="Index">Workouts</a>
-                        </li>
-                    </ul>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-end" id="sidebar-wrapper">
+            <div class="sidebar-heading bg-light p-3">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FitnessTracker</a>
+            </div>
+            <div class="list-group list-group-flush">
+                <a asp-controller="Home" asp-action="Index"
+                   class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-tachometer-alt me-2"></i>Dashboard
+                </a>
+                <a asp-controller="Workout" asp-action="Index"
+                   class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-dumbbell me-2"></i>Workouts
+                </a>
+                <a asp-controller="Exercise" asp-action="Index"
+                   class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-running me-2"></i>Exercises
+                </a>
+                <a asp-controller="Equipment" asp-action="Index"
+                   class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-weight me-2"></i>Equipment
+                </a>
+                <a asp-controller="Home" asp-action="Privacy"
+                   class="list-group-item list-group-item-action bg-light">
+                    <i class="fas fa-shield-alt me-2"></i>Privacy
+                </a>
+            </div>
+        </div>
+
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <!-- Top navigation -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-sm" id="sidebarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
                     <partial name="_LoginPartial" />
                 </div>
+            </nav>
+
+            <!-- Main content -->
+            <div class="container-fluid px-4">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">
@@ -51,9 +65,24 @@
             &copy; 2025 - FitnessTrackerCMS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!-- Sidebar toggle script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarToggle = document.getElementById('sidebarToggle');
+            const wrapper = document.getElementById('wrapper');
+
+            sidebarToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                wrapper.classList.toggle('toggled');
+            });
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

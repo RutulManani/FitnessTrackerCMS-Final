@@ -4,59 +4,96 @@
     ViewData["Title"] = "Workout Details";
 }
 
-<h1>Workout Details</h1>
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Workout Details</h1>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.WorkoutId" class="btn btn-warning">
+                <i class="fas fa-edit"></i> Edit
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
 
-<div>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Date)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Date)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Duration)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Duration) minutes
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CaloriesEstimated)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CaloriesEstimated)
-        </dd>
-    </dl>
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">@Model.Name</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Date</dt>
+                <dd class="col-sm-9">@Model.Date.ToString("D")</dd>
 
-    <h4>Exercises</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Muscle Group</th>
-                <th>Difficulty</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var exercise in Model.Exercises)
+                <dt class="col-sm-3">Duration</dt>
+                <dd class="col-sm-9">@Model.Duration minutes</dd>
+
+                <dt class="col-sm-3">Estimated Calories</dt>
+                <dd class="col-sm-9">@Model.CaloriesEstimated</dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+            <h5 class="mb-0">Exercises Performed</h5>
+        </div>
+        <div class="card-body">
+            @if (Model.Exercises.Any())
             {
-                <tr>
-                    <td>@exercise.Name</td>
-                    <td>@exercise.MuscleGroup</td>
-                    <td>@exercise.Difficulty</td>
-                </tr>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Muscle Group</th>
+                                <th>Difficulty</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var exercise in Model.Exercises)
+                            {
+                                <tr>
+                                    <td>@exercise.Name</td>
+                                    <td>@exercise.MuscleGroup</td>
+                                    <td>
+                                        <span class="badge @GetDifficultyBadgeClass(exercise.Difficulty)">
+                                            @exercise.Difficulty
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Exercise" asp-action="Details" asp-route-id="@exercise.ExerciseId"
+                                           class="btn btn-sm btn-outline-success">
+                                            <i class="fas fa-eye"></i> View
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             }
-        </tbody>
-    </table>
+            else
+            {
+                <div class="alert alert-info">
+                    No exercises recorded for this workout.
+                </div>
+            }
+        </div>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.WorkoutId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+@functions {
+    public string GetDifficultyBadgeClass(string difficulty)
+    {
+        return difficulty switch
+        {
+            "Beginner" => "bg-success",
+            "Intermediate" => "bg-warning text-dark",
+            "Advanced" => "bg-danger",
+            _ => "bg-secondary"
+        };
+    }
+}

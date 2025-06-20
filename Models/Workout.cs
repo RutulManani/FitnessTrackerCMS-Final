@@ -1,4 +1,7 @@
-﻿namespace FitnessTrackerCMS.Models
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FitnessTrackerCMS.Models
 {
     public class Workout
     {
@@ -8,7 +11,7 @@
         public int Duration { get; set; } // in minutes
         public int? CaloriesEstimated { get; set; }
 
-        // Many-to-Many with Exercises (via WorkoutExercise junction table)
-        public ICollection<Exercise> Exercises { get; set; }
+        // Navigation property for junction table
+        public ICollection<WorkoutExercise> WorkoutExercises { get; set; } = new List<WorkoutExercise>();
     }
 }

@@ -158,3 +158,4 @@ C:\Users\Rutul\source\repos\FitnessTrackerCMS-Final\obj\Debug\net8.0\refint\Fitn
 C:\Users\Rutul\source\repos\FitnessTrackerCMS-Final\obj\Debug\net8.0\FitnessTrackerCMS-Final.pdb
 C:\Users\Rutul\source\repos\FitnessTrackerCMS-Final\obj\Debug\net8.0\FitnessTrackerCMS-Final.genruntimeconfig.cache
 C:\Users\Rutul\source\repos\FitnessTrackerCMS-Final\obj\Debug\net8.0\ref\FitnessTrackerCMS-Final.dll
+C:\Users\Rutul\source\repos\FitnessTrackerCMS-Final\obj\Debug\net8.0\FitnessTrackerCMS-Final.sourcelink.json

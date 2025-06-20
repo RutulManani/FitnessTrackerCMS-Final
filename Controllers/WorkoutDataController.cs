@@ -28,6 +28,7 @@ namespace FitnessTrackerCMS.Controllers
         public async Task<ActionResult<IEnumerable<WorkoutListDto>>> GetWorkouts()
         {
             return await _context.Workouts
+                .Include(w => w.WorkoutExercises)
                 .Select(w => new WorkoutListDto
                 {
                     WorkoutId = w.WorkoutId,
@@ -35,7 +36,7 @@ namespace FitnessTrackerCMS.Controllers
                     Date = w.Date,
                     Duration = w.Duration,
                     CaloriesEstimated = w.CaloriesEstimated,
-                    ExerciseCount = w.Exercises.Count
+                    ExerciseCount = w.WorkoutExercises.Count
                 })
                 .ToListAsync();
         }
@@ -49,7 +50,8 @@ namespace FitnessTrackerCMS.Controllers
         public async Task<ActionResult<WorkoutDto>> GetWorkout(int id)
         {
             var workout = await _context.Workouts
-                .Include(w => w.Exercises)
+                .Include(w => w.WorkoutExercises)
+                .ThenInclude(we => we.Exercise)
                 .FirstOrDefaultAsync(w => w.WorkoutId == id);
 
             if (workout == null)
@@ -64,16 +66,17 @@ namespace FitnessTrackerCMS.Controllers
                 Date = workout.Date,
                 Duration = workout.Duration,
                 CaloriesEstimated = workout.CaloriesEstimated,
-                Exercises = workout.Exercises.Select(e => new ExerciseDto
+                Exercises = workout.WorkoutExercises.Select(we => new ExerciseDto
                 {
-                    ExerciseId = e.ExerciseId,
-                    Name = e.Name,
-                    MuscleGroup = e.MuscleGroup,
-                    Difficulty = e.Difficulty
+                    ExerciseId = we.Exercise.ExerciseId,
+                    Name = we.Exercise.Name,
+                    MuscleGroup = we.Exercise.MuscleGroup,
+                    Difficulty = we.Exercise.Difficulty
                 }).ToList()
             };
         }
 
+        // The rest of your API methods remain the same...
         /// <summary>
         /// Creates new workout
         /// </summary>
@@ -173,7 +176,7 @@ namespace FitnessTrackerCMS.Controllers
         public async Task<IActionResult> AddExerciseToWorkout(int workoutId, int exerciseId)
         {
             var workout = await _context.Workouts
-                .Include(w => w.Exercises)
+                .Include(w => w.WorkoutExercises)
                 .FirstOrDefaultAsync(w => w.WorkoutId == workoutId);
 
             var exercise = await _context.Exercises.FindAsync(exerciseId);
@@ -183,8 +186,16 @@ namespace FitnessTrackerCMS.Controllers
                 return NotFound();
             }
 
-            workout.Exercises.Add(exercise);
-            await _context.SaveChangesAsync();
+            // Check if the relationship already exists
+            if (!workout.WorkoutExercises.Any(we => we.ExerciseId == exerciseId))
+            {
+                workout.WorkoutExercises.Add(new WorkoutExercise
+                {
+                    WorkoutId = workoutId,
+                    ExerciseId = exerciseId
+                });
+                await _context.SaveChangesAsync();
+            }
 
             return NoContent();
         }
@@ -196,21 +207,25 @@ namespace FitnessTrackerCMS.Controllers
         /// <param name="exerciseId">Exercise ID</param>
         /// <returns>No content</returns>
         [HttpDelete("{workoutId}/exercises/{exerciseId}")]
-        public async Task<IActionResult> RemoveExerciseFromWorkout(int workoutId, int exerciseId)
+        public async Task<IActionResult> RemoveEquipmentFromExercise(int workoutId, int exerciseId)
         {
             var workout = await _context.Workouts
-                .Include(w => w.Exercises)
+                .Include(w => w.WorkoutExercises)
                 .FirstOrDefaultAsync(w => w.WorkoutId == workoutId);
 
-            var exercise = await _context.Exercises.FindAsync(exerciseId);
-
-            if (workout == null || exercise == null)
+            if (workout == null)
             {
                 return NotFound();
             }
 
-            workout.Exercises.Remove(exercise);
-            await _context.SaveChangesAsync();
+            var workoutExercise = workout.WorkoutExercises
+                .FirstOrDefault(we => we.ExerciseId == exerciseId);
+
+            if (workoutExercise != null)
+            {
+                workout.WorkoutExercises.Remove(workoutExercise);
+                await _context.SaveChangesAsync();
+            }
 
             return NoContent();
         }

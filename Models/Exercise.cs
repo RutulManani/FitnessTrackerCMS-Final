@@ -1,4 +1,6 @@
-﻿namespace FitnessTrackerCMS.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FitnessTrackerCMS.Models
 {
     public class Exercise
     {
@@ -7,12 +9,13 @@
         public string MuscleGroup { get; set; }
         public string Difficulty { get; set; }
 
-        // (WorkoutExercise junction table)
-        public ICollection<Workout> Workouts { get; set; }
+        // Navigation properties
+        public ICollection<WorkoutExercise> WorkoutExercises { get; set; }
+        public ICollection<ExerciseEquipment> ExerciseEquipments { get; set; }
 
-        // (ExerciseEquipment junction table)
-        public ICollection<Equipment> Equipment { get; set; }
-
-
+        [NotMapped]
+        public ICollection<Workout> Workouts => WorkoutExercises?.Select(we => we.Workout).ToList();
+        [NotMapped]
+        public ICollection<Equipment> Equipment => ExerciseEquipments?.Select(ee => ee.Equipment).ToList();
     }
 }

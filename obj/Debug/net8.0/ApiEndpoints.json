@@ -417,7 +417,7 @@
   },
   {
     "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
-    "Method": "RemoveExerciseFromWorkout",
+    "Method": "RemoveEquipmentFromExercise",
     "RelativePath": "api/WorkoutData/{workoutId}/exercises/{exerciseId}",
     "HttpMethod": "DELETE",
     "IsController": true,

@@ -25,7 +25,7 @@ namespace FitnessTrackerCMS.Controllers
                 {
                     EquipmentId = e.EquipmentId,
                     Name = e.Name,
-                    ExerciseCount = e.Exercises.Count
+                    ExerciseCount = e.ExerciseEquipments.Count
                 })
                 .ToListAsync();
 
@@ -41,7 +41,8 @@ namespace FitnessTrackerCMS.Controllers
             }
 
             var equipment = await _context.Equipment
-                .Include(e => e.Exercises)
+                .Include(e => e.ExerciseEquipments)
+                .ThenInclude(ee => ee.Exercise)
                 .FirstOrDefaultAsync(e => e.EquipmentId == id);
 
             if (equipment == null)
@@ -54,12 +55,12 @@ namespace FitnessTrackerCMS.Controllers
                 EquipmentId = equipment.EquipmentId,
                 Name = equipment.Name,
                 Description = equipment.Description,
-                Exercises = equipment.Exercises.Select(e => new ExerciseDto
+                Exercises = equipment.ExerciseEquipments.Select(ee => new ExerciseDto
                 {
-                    ExerciseId = e.ExerciseId,
-                    Name = e.Name,
-                    MuscleGroup = e.MuscleGroup,
-                    Difficulty = e.Difficulty
+                    ExerciseId = ee.Exercise.ExerciseId,
+                    Name = ee.Exercise.Name,
+                    MuscleGroup = ee.Exercise.MuscleGroup,
+                    Difficulty = ee.Exercise.Difficulty
                 }).ToList()
             };
 

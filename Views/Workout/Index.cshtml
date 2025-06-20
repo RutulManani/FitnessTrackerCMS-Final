@@ -4,56 +4,47 @@
     ViewData["Title"] = "Workouts";
 }
 
-<h1>Workouts</h1>
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Workouts</h1>
+        <a asp-action="Create" class="btn btn-primary">Add Workout</a>
+    </div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Date)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Duration)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CaloriesEstimated)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ExerciseCount)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Duration) minutes
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CaloriesEstimated)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ExerciseCount)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.WorkoutId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.WorkoutId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.WorkoutId">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Duration</th>
+                            <th>Exercises</th>
+                            <th class="text-end">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.Name</td>
+                                <td>@item.Date.ToString("MMM dd, yyyy")</td>
+                                <td>@item.Duration min</td>
+                                <td>
+                                    <span class="badge bg-secondary">@item.ExerciseCount</span>
+                                </td>
+                                <td class="text-end">
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Details" asp-route-id="@item.WorkoutId" class="btn btn-sm btn-outline-secondary">Details</a>
+                                        <a asp-action="Edit" asp-route-id="@item.WorkoutId" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                        <a asp-action="Delete" asp-route-id="@item.WorkoutId" class="btn btn-sm btn-outline-danger">Delete</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

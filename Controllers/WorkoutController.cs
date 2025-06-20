@@ -4,6 +4,7 @@ using FitnessTrackerCMS.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace FitnessTrackerCMS.Controllers
@@ -21,6 +22,7 @@ namespace FitnessTrackerCMS.Controllers
         public async Task<IActionResult> Index()
         {
             var workouts = await _context.Workouts
+                .Include(w => w.WorkoutExercises)
                 .Select(w => new WorkoutListDto
                 {
                     WorkoutId = w.WorkoutId,
@@ -28,7 +30,7 @@ namespace FitnessTrackerCMS.Controllers
                     Date = w.Date,
                     Duration = w.Duration,
                     CaloriesEstimated = w.CaloriesEstimated,
-                    ExerciseCount = w.Exercises.Count
+                    ExerciseCount = w.WorkoutExercises.Count
                 })
                 .ToListAsync();
 
@@ -44,7 +46,8 @@ namespace FitnessTrackerCMS.Controllers
             }
 
             var workout = await _context.Workouts
-                .Include(w => w.Exercises)
+                .Include(w => w.WorkoutExercises)
+                    .ThenInclude(we => we.Exercise)
                 .FirstOrDefaultAsync(w => w.WorkoutId == id);
 
             if (workout == null)
@@ -59,13 +62,14 @@ namespace FitnessTrackerCMS.Controllers
                 Date = workout.Date,
                 Duration = workout.Duration,
                 CaloriesEstimated = workout.CaloriesEstimated,
-                Exercises = workout.Exercises.Select(e => new ExerciseDto
-                {
-                    ExerciseId = e.ExerciseId,
-                    Name = e.Name,
-                    MuscleGroup = e.MuscleGroup,
-                    Difficulty = e.Difficulty
-                }).ToList()
+                Exercises = workout.WorkoutExercises
+                    .Select(we => new ExerciseDto
+                    {
+                        ExerciseId = we.Exercise.ExerciseId,
+                        Name = we.Exercise.Name,
+                        MuscleGroup = we.Exercise.MuscleGroup,
+                        Difficulty = we.Exercise.Difficulty
+                    }).ToList()
             };
 
             return View(workoutDto);
@@ -137,20 +141,30 @@ namespace FitnessTrackerCMS.Controllers
 
             if (ModelState.IsValid)
             {
-                var workout = await _context.Workouts.FindAsync(id);
-                if (workout == null)
+                try
                 {
-                    return NotFound();
+                    var workout = await _context.Workouts.FindAsync(id);
+                    if (workout == null)
+                    {
+                        return NotFound();
+                    }
+
+                    workout.Name = workoutDto.Name;
+                    workout.Date = workoutDto.Date;
+                    workout.Duration = workoutDto.Duration;
+                    workout.CaloriesEstimated = workoutDto.CaloriesEstimated;
+
+                    _context.Update(workout);
+                    await _context.SaveChangesAsync();
                 }
-
-                workout.Name = workoutDto.Name;
-                workout.Date = workoutDto.Date;
-                workout.Duration = workoutDto.Duration;
-                workout.CaloriesEstimated = workoutDto.CaloriesEstimated;
-
-                _context.Update(workout);
-                await _context.SaveChangesAsync();
-
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!WorkoutExists(id))
+                    {
+                        return NotFound();
+                    }
+                    throw;
+                }
                 return RedirectToAction(nameof(Index));
             }
             return View(workoutDto);
@@ -183,6 +197,39 @@ namespace FitnessTrackerCMS.Controllers
             _context.Workouts.Remove(workout);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        // POST: Workout/AddExercise
+        [HttpPost]
+        public async Task<IActionResult> AddExercise(int workoutId, int exerciseId)
+        {
+            var workout = await _context.Workouts
+                .Include(w => w.WorkoutExercises)
+                .FirstOrDefaultAsync(w => w.WorkoutId == workoutId);
+
+            var exercise = await _context.Exercises.FindAsync(exerciseId);
+
+            if (workout == null || exercise == null)
+            {
+                return NotFound();
+            }
+
+            if (!workout.WorkoutExercises.Any(we => we.ExerciseId == exerciseId))
+            {
+                workout.WorkoutExercises.Add(new WorkoutExercise
+                {
+                    WorkoutId = workoutId,
+                    ExerciseId = exerciseId
+                });
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Details), new { id = workoutId });
+        }
+
+        private bool WorkoutExists(int id)
+        {
+            return _context.Workouts.Any(e => e.WorkoutId == id);
         }
     }
 }

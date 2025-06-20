@@ -3,16 +3,96 @@
   "WorkspaceRootPath": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\workout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\workout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\exercise\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\exercise\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\equipment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\equipment\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\exercisedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\exercisedatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\workout\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\workout\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\views\\exercise\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:views\\exercise\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\models\\workoutexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:models\\workoutexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:models\\workout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\models\\exerciseequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:models\\exerciseequipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\workoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\workoutdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\workoutdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\exercisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\exercisecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\equipmentdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\equipmentdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +102,305 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Workout\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Workout\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Workout\\Index.cshtml",
+              "RelativeToolTip": "Views\\Workout\\Index.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwDEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:31:48.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAD8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T06:39:34.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExerciseDataController.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\ExerciseDataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExerciseDataController.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\ExerciseDataController.cs",
+              "RelativeToolTip": "Controllers\\ExerciseDataController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAYwM0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:35:48.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Exercise\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Exercise\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Exercise\\Index.cshtml",
+              "RelativeToolTip": "Views\\Exercise\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:31:27.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAYwB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T16:32:20.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAjwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T00:02:04.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Equipment\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Equipment\\Index.cshtml",
+              "RelativeToolTip": "Views\\Equipment\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwC0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:31:00.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Equipment\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Equipment\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Equipment\\Details.cshtml",
+              "RelativeToolTip": "Views\\Equipment\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:31:13.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwFcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T05:32:42.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WorkoutController.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\WorkoutController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkoutController.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\WorkoutController.cs",
+              "RelativeToolTip": "Controllers\\WorkoutController.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAgwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:32:29.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAswK8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-20T16:48:08.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Exercise\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Exercise\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Exercise\\Details.cshtml",
+              "RelativeToolTip": "Views\\Exercise\\Details.cshtml",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:31:37.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Workout\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Workout\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Views\\Workout\\Details.cshtml",
+              "RelativeToolTip": "Views\\Workout\\Details.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAkwGIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T16:32:00.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Equipment.cs",
+              "RelativeDocumentMoniker": "Models\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Equipment.cs",
+              "RelativeToolTip": "Models\\Equipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:30:11.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Exercise.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Exercise.cs",
+              "RelativeDocumentMoniker": "Models\\Exercise.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Exercise.cs",
+              "RelativeToolTip": "Models\\Exercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:29:37.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExerciseEquipment.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\ExerciseEquipment.cs",
+              "RelativeDocumentMoniker": "Models\\ExerciseEquipment.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\ExerciseEquipment.cs",
+              "RelativeToolTip": "Models\\ExerciseEquipment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:30:26.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Workout.cs",
+              "RelativeDocumentMoniker": "Models\\Workout.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\Workout.cs",
+              "RelativeToolTip": "Models\\Workout.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:30:38.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "WorkoutExercise.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\WorkoutExercise.cs",
+              "RelativeDocumentMoniker": "Models\\WorkoutExercise.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Models\\WorkoutExercise.cs",
+              "RelativeToolTip": "Models\\WorkoutExercise.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:30:52.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "WorkoutDataController.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\WorkoutDataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WorkoutDataController.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\WorkoutDataController.cs",
+              "RelativeToolTip": "Controllers\\WorkoutDataController.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAA3wOQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:37:04.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwC8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:28:49.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ExerciseController.cs",
+              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\ExerciseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExerciseController.cs",
+              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\ExerciseController.cs",
+              "RelativeToolTip": "Controllers\\ExerciseController.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAA3wKoAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T05:31:52.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "EquipmentDataController.cs",
               "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentDataController.cs",
               "RelativeDocumentMoniker": "Controllers\\EquipmentDataController.cs",
               "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentDataController.cs",
               "RelativeToolTip": "Controllers\\EquipmentDataController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAYwKwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T00:07:54.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 22,
               "Title": "EquipmentController.cs",
               "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\EquipmentController.cs",
               "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentController.cs",
               "RelativeToolTip": "Controllers\\EquipmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAYwKcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T00:01:34.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T00:02:04.755Z",
               "EditorCaption": ""
             }
           ]

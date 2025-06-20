@@ -1,4 +1,7 @@
-﻿namespace FitnessTrackerCMS.Models
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace FitnessTrackerCMS.Models
 {
     public class Equipment
     {
@@ -6,7 +9,10 @@
         public string Name { get; set; }
         public string Description { get; set; }
 
-        // (ExerciseEquipment junction table)
-        public ICollection<Exercise> Exercises { get; set; }
+        // Navigation property
+        public ICollection<ExerciseEquipment> ExerciseEquipments { get; set; }
+
+        [NotMapped]
+        public ICollection<Exercise> Exercises => ExerciseEquipments?.Select(ee => ee.Exercise).ToList();
     }
 }
