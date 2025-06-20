@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\equipmentdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\equipmentdatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|solutionrelative:controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E63D958C-77DA-468C-B0C7-850DCFB6F0B5}|FitnessTrackerCMS-Final.csproj|c:\\users\\rutul\\source\\repos\\fitnesstrackercms-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EquipmentDataController.cs",
               "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentDataController.cs",
               "RelativeDocumentMoniker": "Controllers\\EquipmentDataController.cs",
@@ -39,13 +39,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EquipmentController.cs",
               "DocumentMoniker": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\EquipmentController.cs",
               "ToolTip": "C:\\Users\\Rutul\\source\\repos\\FitnessTrackerCMS-Final\\Controllers\\EquipmentController.cs",
               "RelativeToolTip": "Controllers\\EquipmentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T00:01:34.225Z",
               "EditorCaption": ""
