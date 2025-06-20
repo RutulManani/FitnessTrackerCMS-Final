@@ -1,0 +1,439 @@
+[
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "GetEquipment",
+    "RelativePath": "api/EquipmentData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessTrackerCMS.DTOs.EquipmentListDto, FitnessTrackerCMS-Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "PostEquipment",
+    "RelativePath": "api/EquipmentData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipmentDto",
+        "Type": "FitnessTrackerCMS.DTOs.EquipmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.EquipmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "GetEquipment",
+    "RelativePath": "api/EquipmentData/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.EquipmentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "PutEquipment",
+    "RelativePath": "api/EquipmentData/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "equipmentDto",
+        "Type": "FitnessTrackerCMS.DTOs.EquipmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "DeleteEquipment",
+    "RelativePath": "api/EquipmentData/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.EquipmentDataController",
+    "Method": "GetExercisesForEquipment",
+    "RelativePath": "api/EquipmentData/{id}/exercises",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessTrackerCMS.DTOs.ExerciseDto, FitnessTrackerCMS-Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "GetExercises",
+    "RelativePath": "api/ExerciseData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessTrackerCMS.DTOs.ExerciseListDto, FitnessTrackerCMS-Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "PostExercise",
+    "RelativePath": "api/ExerciseData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exerciseDto",
+        "Type": "FitnessTrackerCMS.DTOs.ExerciseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.ExerciseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "AddEquipmentToExercise",
+    "RelativePath": "api/ExerciseData/{exerciseId}/equipment/{equipmentId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exerciseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "equipmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "RemoveEquipmentFromExercise",
+    "RelativePath": "api/ExerciseData/{exerciseId}/equipment/{equipmentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "exerciseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "equipmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "GetExercise",
+    "RelativePath": "api/ExerciseData/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.ExerciseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "PutExercise",
+    "RelativePath": "api/ExerciseData/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exerciseDto",
+        "Type": "FitnessTrackerCMS.DTOs.ExerciseDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.ExerciseDataController",
+    "Method": "DeleteExercise",
+    "RelativePath": "api/ExerciseData/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "GetWorkouts",
+    "RelativePath": "api/WorkoutData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FitnessTrackerCMS.DTOs.WorkoutListDto, FitnessTrackerCMS-Final, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "PostWorkout",
+    "RelativePath": "api/WorkoutData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workoutDto",
+        "Type": "FitnessTrackerCMS.DTOs.WorkoutDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.WorkoutDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "GetWorkout",
+    "RelativePath": "api/WorkoutData/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "FitnessTrackerCMS.DTOs.WorkoutDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "PutWorkout",
+    "RelativePath": "api/WorkoutData/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "workoutDto",
+        "Type": "FitnessTrackerCMS.DTOs.WorkoutDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "DeleteWorkout",
+    "RelativePath": "api/WorkoutData/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "AddExerciseToWorkout",
+    "RelativePath": "api/WorkoutData/{workoutId}/exercises/{exerciseId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workoutId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exerciseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitnessTrackerCMS.Controllers.WorkoutDataController",
+    "Method": "RemoveExerciseFromWorkout",
+    "RelativePath": "api/WorkoutData/{workoutId}/exercises/{exerciseId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "workoutId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "exerciseId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

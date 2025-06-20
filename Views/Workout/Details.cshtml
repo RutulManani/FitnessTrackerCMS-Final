@@ -1,0 +1,62 @@
+﻿@model FitnessTrackerCMS.DTOs.WorkoutDto
+
+@{
+    ViewData["Title"] = "Workout Details";
+}
+
+<h1>Workout Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Duration) minutes
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CaloriesEstimated)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CaloriesEstimated)
+        </dd>
+    </dl>
+
+    <h4>Exercises</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Muscle Group</th>
+                <th>Difficulty</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exercise in Model.Exercises)
+            {
+                <tr>
+                    <td>@exercise.Name</td>
+                    <td>@exercise.MuscleGroup</td>
+                    <td>@exercise.Difficulty</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.WorkoutId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
